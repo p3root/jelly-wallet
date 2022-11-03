@@ -56,11 +56,5 @@ external dynamic getAddress(String path, bool verify);
 @JS('ledger.signMessage')
 external String signMessageLedger(String path, String message);
 
-@JS('ledger.rawTxToPsbt')
-external String rawTxToPsbt(String hex, String network);
-
-@JS('ledger.signTransaction')
-external String signTransactionLedger(List<LedgerTransaction> transaction, List<String> paths, String newTx, String network);
-
 @JS('ledger.signTransactionRaw')
 external String signTransactionLedgerRaw(List<LedgerTransactionRaw> transaction, List<String> paths, String newTx, String network, String changePath);
